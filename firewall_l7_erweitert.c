@@ -1,6 +1,8 @@
 /*
  * firewall_l7_dual.c - Dual-Stack L7 Firewall + HTTP/2 Erkennung
  * IPv4/IPv6, TCP-Reassembly, DNS, HTTP/1.1, HTTP/2 (h2/h2c), HPACK, Exploit-Schutz
+ *
+ * gcc -O2 -Wall -Wextra -o firewall_l7_dual firewall_l7_dual.c -lpcap -pthread -lm
  */
 
 #define _GNU_SOURCE
