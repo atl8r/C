@@ -6,7 +6,7 @@
  *   gcc -o firewall_l7_dual firewall_l7_dual.c -lpcap -lpthread -lnghttp2 -lm -Wall -Wextra
  *
  * Aufruf:
- *   sudo ./firewall_l7_dual -v -i {interface}
+ *   sudo ./firewall_l7_dual -v -i {interface(eth0, ens33, wlan0)}
  */
 
 #define _GNU_SOURCE
