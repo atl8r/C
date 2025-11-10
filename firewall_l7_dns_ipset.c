@@ -7,9 +7,9 @@
  *   -lpcap -lnghttp2 -lmnl
  *
  * IP-Set einrichten (einmalig)
- * ipset create firewall_block hash:ip family inet timeout 1800 -exist
- * iptables -I INPUT -m set --match-set firewall_block src -j DROP
- * ip6tables -I INPUT -m set --match-set firewall_block src -j DROP
+ *   ipset create firewall_block hash:ip family inet timeout 1800 -exist
+ *   iptables -I INPUT -m set --match-set firewall_block src -j DROP
+ *   ip6tables -I INPUT -m set --match-set firewall_block src -j DROP
  *
  * Aufruf:
  *   sudo ./firewall_l7_dns_ipset -v -i {interface}
